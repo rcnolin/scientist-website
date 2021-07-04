@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dr. Scientist</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showName() {
+            var input = document.getElementById("scientistAnswer").value;
+            
+            document.getElementById("output").innerHTML = input;
+
+            document.getElementById("scientistAnswer").value = '';
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <span class="scientistName">Dr. Scientist</span>
+        </div>
+    </div>
+
+    <div id="aboutSection">
+        <div class="container">
+            <img src="1282px-Mad_scientist.svg.png" class="image1" width="25%" height="25%" alt="Mad Scientist">
+            <ul class="info">
+                <li>Name: Dr. Scientist</li>
+                <li>Age: Unknown</li>
+                <li>Location: Hidden</li>
+                <li>Awards: Many</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="eventsSection">
+        <div class="container">
+            <div class="events">
+                <h2>Upcoming Events:</h2>
+            </div>
+        </div>
+    </div>
+    <div id="eventsContentSection">
+        <div class="container">
+            <div class="content">
+                <table class="row">
+                    <tr>
+                        <td>
+                            <div class="event">
+                                <h4>28th Annual Robot Gala</h4>
+                                <div class="eventInfo">
+                                    <p>Location: Nowhere drive</p>
+                                    <p>Date: Now</p>
+                                </div>
+                                <a href="#" class="button">Read More</a>
+                            </div>
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            <div class="event">
+                                <h4>The Chemistry of Chemistry</h4>
+                                <div class="eventInfo">
+                                    <p>Location: Everywhere</p>
+                                    <p>Date: Past</p>
+                                </div>
+                                <a href="#" class="button">Read More</a>
+                            </div>
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            <div class="event">
+                                <h4>Series 4: Lecture series on The Human Brain</h4>
+                                <div class="eventInfo">
+                                    <p>Location: Here</p>
+                                    <p>Date: Future</p>
+                                </div>
+                                <a href="#" class="button">Read More</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="styleMe">
+        <div class="container">
+            <a href="#" class="button">Style Me!</a>
+        </div>
+    </div>
+
+    <div id="articlesSection">
+        <div class="container">
+            <div class="articles">
+                <h2>Articles:</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="articlesContentSection">
+        <div class="container">
+            <div class="content2">
+                <div class="article">
+                    <h4>All about things</h4>
+                    <div class="articleInfo">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit egestas tortor vitae
+                            vestibulum. Etiam at hendrerit tellus, non varius urna. Quisque sollicitudin luctus est, sit
+                            amet bibendum felis porta eu. Maecenas a nibh sed massa pharetra egestas. Vestibulum
+                            pretium, elit at euismod vulputate, nibh velit posuere enim, eu elementum risus lectus
+                            sollicitudin lectus. Aenean scelerisque turpis lacus, vehicula fermentum felis vestibulum
+                            convallis. Maecenas quis ante sit amet risus varius eleifend. Ut sit amet rutrum lacus.
+                            Vivamus molestie ex lacus, a tristique nibh egestas eleifend. Morbi et velit in ligula
+                            cursus maximus vulputate ut urna.</p>
+                    </div>
+                    <a href="#" class="button">Read More</a>
+                </div>
+
+                <div class="article">
+                    <h4>The Chemistry of Chemistry</h4>
+                    <div class="articletInfo">
+                        <p>Vivamus sagittis ipsum velit, id fringilla lorem semper vitae. Aliquam in neque tortor.
+                            Pellentesque eleifend ante ligula, sit amet commodo purus pulvinar quis. Sed id sollicitudin
+                            arcu, fringilla dignissim nunc. Integer sit amet faucibus felis, vitae fringilla leo.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut
+                            posuere vitae nunc at hendrerit.</p>
+                    </div>
+                    <a href="#" class="button">Read More</a>
+                </div>
+
+                <div class="article">
+                    <h4>Series 4: Lecture series on The Human Brain</h4>
+                    <div class="articleInfo">
+                        <p>Aliquam feugiat interdum erat, at euismod lectus egestas ac. Pellentesque augue urna, feugiat
+                            quis arcu vel, viverra porttitor lectus. Maecenas eleifend rhoncus sapien in laoreet.
+                            Quisque ac nunc sed lacus dignissim sollicitudin. Quisque sit amet viverra purus, ut commodo
+                            nibh. Integer feugiat dignissim erat, vitae semper turpis bibendum vel. Donec porta, ante ac
+                            lobortis dignissim, nisl tellus varius eros, sit amet consectetur risus orci et velit.</p>
+                    </div>
+                    <a href="#" class="button">Read More</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="favScientistSection">
+        <div class="container">
+            <div class="content3">
+                <h3>Who is your favourite scientist?</h3>  
+                <input type="text" id="scientistAnswer" name="scientistAnswer">
+                <input type="submit" onclick="showName();" value="Submit">
+            </div>
+        </div>
+    </div>
+
+    <div id="favScientistAnswer">
+        <div class="container">
+            <div class="content4">
+                <h3>Your favourite scientist is:</h3> 
+                <p id="output"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
